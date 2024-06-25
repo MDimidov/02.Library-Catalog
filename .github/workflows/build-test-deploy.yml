@@ -24,5 +24,7 @@ jobs:
       run: npm run start-be &
     - name: Start Frondend
       run: npm run start-fe &
+    - name: Instal Playwriht Browsers
+      run: npx playwright install
     - name: Start UI tests
       run: npm run start-test:ui
